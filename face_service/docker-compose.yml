@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  face-service:
+    build: .
+    container_name: hrms-face-service
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"  # Bind to localhost ONLY — nginx reverse proxy handles external access
+    environment:
+      - FACE_SECRET=${FACE_SECRET}
+      - ALLOWED_IPS=${ALLOWED_IPS:-}
+      - BIND_HOST=0.0.0.0
+      - BIND_PORT=8000
+      - ANTISPOOF_MODEL_PATH=/app/models/anti_spoof.onnx
+      - LIVENESS_THRESHOLD=0.5
+    volumes:
+      - ./models:/app/models:ro  # Mount anti-spoofing model
+    deploy:
+      resources:
+        limits:
+          memory: 2G  # buffalo_l needs ~1.2GB RAM at peak
+          cpus: "2.0"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s  # Model loading takes ~30-45s on CPU

@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary-color: #06b6d4;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --danger-color: #ef4444;
+    --bg-body: #f8fafc;
+    --card-bg: #ffffff;
+    --text-heading: #0f172a;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    background-color: var(--bg-body) !important;
+    color: var(--text-body) !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================== */
+/* Form Controls & Inputs Polish                                  */
+/* ============================================================== */
+label {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: var(--text-heading) !important;
+    margin-bottom: 7px !important;
+    letter-spacing: 0.1px;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+.form-control, 
+select.form-control, 
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"], 
+textarea {
+    border: 1px solid var(--border-color) !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+    height: auto !important;
+    color: var(--text-heading) !important;
+    background-color: #ffffff !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) !important;
+}
+
+.form-control:focus, 
+select.form-control:focus, 
+textarea:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12) !important;
+    outline: none !important;
+    background-color: #ffffff !important;
+}
+
+.form-control::placeholder {
+    color: #94a3b8 !important;
+    font-weight: 400;
+}
+
+/* ============================================================== */
+/* Buttons & Actions Modernization                                */
+/* ============================================================== */
+.btn {
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 9px 20px !important;
+    font-size: 14px !important;
+    transition: all 0.2s ease !important;
+    letter-spacing: 0.2px;
+}
+
+.btn-primary, .btn-info {
+    background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%) !important;
+    border: none !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25) !important;
+}
+
+.btn-primary:hover, .btn-info:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #2563eb 100%) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35) !important;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    border: none !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2) !important;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+    border: none !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2) !important;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+    transform: translateY(-1px);
+}
+
+/* ============================================================== */
+/* Cards & Containers                                             */
+/* ============================================================== */
+.card {
+    border-radius: 16px !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02) !important;
+    background: #ffffff !important;
+    margin-bottom: 24px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-body {
+    padding: 24px !important;
+}
+
+.card-title {
+    font-weight: 700 !important;
+    color: var(--text-heading) !important;
+    font-size: 16px !important;
+    margin-bottom: 18px !important;
+}
+
+.page-titles {
+    padding: 16px 20px !important;
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    margin-bottom: 24px !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+}
+
+.page-titles h3 {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    color: var(--text-heading) !important;
+}
+
+/* ============================================================== */
+/* Tables Modernization                                           */
+/* ============================================================== */
+.table {
+    width: 100% !important;
+}
+
+.table thead th {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 2px solid var(--border-color) !important;
+    padding: 14px 16px !important;
+}
+
+.table tbody td {
+    padding: 14px 16px !important;
+    vertical-align: middle !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    font-size: 14px !important;
+    color: var(--text-body) !important;
+}
+
+.table tbody tr:hover {
+    background-color: #f8fafc !important;
+}
+
+/* ============================================================== */
+/* Badges & Status Pill Indicators                                */
+/* ============================================================== */
+.badge, .label {
+    padding: 6px 12px !important;
+    border-radius: 30px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+}
+
+.badge-success, .label-success {
+    background-color: #dcfce7 !important;
+    color: #15803d !important;
+}
+
+.badge-warning, .label-warning {
+    background-color: #fef9c3 !important;
+    color: #a16207 !important;
+}
+
+.badge-danger, .label-danger {
+    background-color: #fee2e2 !important;
+    color: #b91c1c !important;
+}
+
+.badge-info, .label-info {
+    background-color: #e0f2fe !important;
+    color: #0369a1 !important;
+}
+
+/* ============================================================== */
+/* Topbar & Header Enhancements                                   */
+/* ============================================================== */
+.topbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+}
+
+.topbar .navbar-header {
+    background: #0f172a !important;
+    border-right: 1px solid #1e293b !important;
+}
+
+/* ============================================================== */
+/* Sidebar Modernization                                          */
+/* ============================================================== */
+.left-sidebar {
+    background: #ffffff !important;
+    border-right: 1px solid var(--border-color) !important;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.02) !important;
+}
+
+.sidebar-nav ul li a {
+    color: #475569 !important;
+    border-radius: 10px !important;
+    margin: 2px 12px !important;
+    padding: 10px 14px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+}
+
+.sidebar-nav ul li a:hover, 
+.sidebar-nav ul li.active > a {
+    color: var(--primary-color) !important;
+    background-color: #eef2ff !important;
+    font-weight: 600 !important;
+}
+
+.sidebar-nav ul li a i {
+    font-size: 18px !important;
+    margin-right: 10px !important;
+    color: #64748b !important;
+    transition: color 0.2s ease !important;
+}
+
+.sidebar-nav ul li a:hover i, 
+.sidebar-nav ul li.active > a i {
+    color: var(--primary-color) !important;
+}
+
+.user-profile {
+    padding: 20px 15px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    margin-bottom: 12px !important;
+}
+
+.user-profile .profile-text h5 {
+    font-weight: 700 !important;
+    color: var(--text-heading) !important;
+    margin-top: 8px !important;
+}
+
+/* ============================================================== */
+/* Login Page Modern Theme                                        */
+/* ============================================================== */
+.login-wrapper-modern {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311b92 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 24px;
+}
+
+.login-wrapper-modern::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99,102,241,0.25) 0%, rgba(0,0,0,0) 70%);
+    top: -150px;
+    right: -150px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.login-wrapper-modern::after {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(14,165,233,0.2) 0%, rgba(0,0,0,0) 70%);
+    bottom: -200px;
+    left: -200px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.login-card-modern {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+    width: 100%;
+    max-width: 440px;
+    padding: 42px 36px;
+    z-index: 10;
+    position: relative;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-card-modern .logo-area {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login-card-modern .logo-area img {
+    max-height: 60px;
+    margin-bottom: 14px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.08));
+}
+
+.login-card-modern .login-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-heading);
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.login-card-modern .login-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 28px;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.input-icon-wrapper i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 18px;
+    transition: color 0.2s ease;
+    z-index: 5;
+}
+
+.input-icon-wrapper .form-control {
+    padding-left: 46px !important;
+}
+
+.input-icon-wrapper:focus-within i {
+    color: var(--primary-color) !important;
+}
+
+.login-btn-modern {
+    width: 100%;
+    padding: 13px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    border-radius: 12px !important;
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%) !important;
+    border: none !important;
+    color: #ffffff !important;
+    box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4) !important;
+    cursor: pointer;
+    transition: all 0.2s ease !important;
+    margin-top: 10px;
+}
+
+.login-btn-modern:hover {
+    background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 24px -5px rgba(79, 70, 229, 0.5) !important;
+}
+
+.message-alert-danger {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ============================================================== */
+/* Dashboard Stat Badges & Round Icons                            */
+/* ============================================================== */
+.round {
+    line-height: 48px !important;
+    color: #ffffff !important;
+    width: 52px !important;
+    height: 52px !important;
+    font-size: 22px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 400 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.round-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+}
+
+.round-info {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%) !important;
+}
+
+.round-danger {
+    background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%) !important;
+}
+
+.round-warning {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+}
+
+.round-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+}
+
+/* ============================================================== */
+/* Modal Improvements & Responsive Fixes                          */
+/* ============================================================== */
+.modal-dialog.modal-xl,
+#generatePayrollModal .modal-dialog {
+    max-width: 1050px !important;
+    width: 95% !important;
+    margin: 30px auto !important;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog.modal-xl,
+    #generatePayrollModal .modal-dialog {
+        width: 98% !important;
+        margin: 10px auto !important;
+    }
+}
+
+.modal-content {
+    border-radius: 20px !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    color: #ffffff !important;
+    padding: 18px 24px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.modal-header .modal-title {
+    color: #ffffff !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+}
+
+.modal-header .close {
+    color: #ffffff !important;
+    opacity: 0.8;
+    text-shadow: none !important;
+    font-size: 24px !important;
+    outline: none !important;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 24px !important;
+}
+
+.modal-footer {
+    padding: 16px 24px !important;
+    background: #f8fafc !important;
+    border-top: 1px solid var(--border-color) !important;
+}
+
+/* Payroll item list formatting */
+.payroll-item-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 0 !important;
+    border-bottom: 1px dashed #e2e8f0 !important;
+    font-size: 14px !important;
+}
+
+.payroll-item-row:last-child {
+    border-bottom: none !important;
+}
+
+.payroll-item-label {
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+.payroll-item-val {
+    font-weight: 700 !important;
+    color: #0f172a !important;
+}
+
+/* ============================================================== */
+/* Payslip Executive Overhaul Styles                             */
+/* ============================================================== */
+.payslip-card {
+    background: #ffffff !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 4px 12px -2px rgba(15, 23, 42, 0.02) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.payslip-item-line {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 9px 0 !important;
+    border-bottom: 1px dashed #cbd5e1 !important;
+    transition: background-color 0.15s ease;
+}
+
+.payslip-item-line:last-child {
+    border-bottom: none !important;
+}
+
+.payslip-item-line .text-muted,
+.payslip-item-line span:first-child,
+.payroll-item-label {
+    color: #1e293b !important;
+    font-weight: 600 !important;
+    font-size: 13.5px !important;
+}
+
+.payslip-item-line:hover {
+    background-color: rgba(241, 245, 249, 0.7) !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    border-radius: 6px;
+}
+
+
+.font-weight-semibold {
+    font-weight: 600 !important;
+}
+
+.font-weight-extrabold {
+    font-weight: 800 !important;
+}
+
+.tracking-tight {
+    letter-spacing: -0.4px !important;
+}
+
+.rounded-xl {
+    border-radius: 16px !important;
+}
+
+.rounded-lg {
+    border-radius: 12px !important;
+}
+
+
+

@@ -1,0 +1,9 @@
+# Block direct access to attendance photos
+# Photos are served through the Face controller's photo() method
+# which enforces authentication and authorization checks.
+#
+# Biometric photos are personal data under UU PDP No. 27/2022.
+# They must NEVER be publicly accessible via predictable URLs.
+
+Order Deny,Allow
+Deny from all

@@ -1,0 +1,13 @@
+# Face Recognition Sidecar — Pinned Dependencies
+# InsightFace buffalo_l + ArcFace w600k_r50 (512-D)
+# MiniFASNet anti-spoofing (ONNX)
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+insightface==0.7.3
+onnxruntime==1.18.0
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+Pillow==10.4.0
+python-multipart==0.0.9
+psutil==6.0.0
