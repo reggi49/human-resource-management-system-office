@@ -1,7 +1,7 @@
 /*
  Navicat Premium / DBram Dump SQL
 
- Source Server         : MBtech.app (127.0.0.1:3306)
+ Source Server         : HRMS Office (127.0.0.1:3306)
  Source Server Type    : MySQL
  Source Server Version : 5.7.42-0ubuntu0.18.04.1
  Source Host           : 127.0.0.1:3306
@@ -250,7 +250,7 @@ CREATE TABLE `company_data` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `company_data` (`id_company`, `company_name`, `lat`, `lng`) VALUES
-(1, 'MBtech', '-6.160981', '106.904365');
+(1, 'HRMS Office', '-6.160981', '106.904365');
 COMMIT;
 
 -- ----------------------------
